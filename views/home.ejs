@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body tabindex="-1">
+  <%- include('partials/navbar', {page: '/'}) %>
+  
+  <div class="container mx-auto">
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Hello, Welcome To My Lego Collection!</h1>
+            <p class="py-6">We have a diverse collection of sets from Lego's history. From Medieval to Space, we have everything in between and more.</p>
+            <a href="/lego/sets">
+                <button class="btn btn-primary">Show me</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div class = "card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/02-2.jpg" alt="Digger Bucket Assembly" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Digger Bucket Assembly</h2>
+              <p>This set is similar to 705-4, 24-2, and 1124-1, a small digger!</p>
+              <div class="card-actions justify-end">
+                <a href="/lego/sets/02-2"><button class="btn btn-primary">See More</button></a>
+              </div>
+            </div>
+          </div>
+          <div class = "card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/010423-1.jpg" alt="The Majestic Horse" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">The Majestic Horse</h2>
+              <p>Designed by previous 2017 Lego Masters UK winners Nathan Dias and Steve Guinness.
+                Given to select members of the Recognised Lego Fan Media group for an April fools 
+                prank in 2023, only around 10 are known to exist.</p>
+              <div class="card-actions justify-end">
+                <a href="/lego/sets/010423-1"><button class="btn btn-primary">See More</button></a>
+              </div>
+            </div>
+          </div>
+          <div class = "card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/002253963-1.jpg" alt="Legend of Chima: Corbeaux et Gorilles" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Legend of Chima: Corbeaux et Gorilles</h2>
+              <p>Title translates as: Ravens and Gorillas</p>
+              <div class="card-actions justify-end">
+                <a href="/lego/sets/002253963-1"><button class="btn btn-primary">See More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</body>
+</html>
